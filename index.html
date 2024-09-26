@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -20,17 +20,17 @@
       
       <div class="weather">
         <div class="classco">
-          <div class="sunny">
+          <div class="sunny" id="weatherInfo">
             <span>
-              <img src="./images/asset 0.png" alt="Description of Image" />
+              <img src="./images/asset 0.png" id="weather-icon" alt="Description of Image" />
             </span>
-            <a class="weather-color" href="#">34c sunny</a>
+            <a class="weather-color" id="weather-text" href="#">34c sunny</a>
           </div>
-          <div class="sunny1">
+          <div class="sunny1" >
             <span>
-              <img src="./images/asset 0.png" alt="Description of Image" />
+              <!-- <img src="./images/asset 0.png" alt="Description of Image" /> -->
             </span>
-            <a class="weather-colors" href="#"
+            <a class="weather-colors" id="currentDate" style="color: white;" href="#"
               >Thursday, 26th September, 2024</a
             >
           </div>
@@ -77,7 +77,7 @@
     <div class="comment-box">
       <h3>Leave a Comment</h3>
       <textarea id="commentInput" placeholder="Write your comment here..." rows="4"></textarea>
-      <button onclick="addComment()">Submit</button>
+      <button id="comment-button">Submit</button>
   </div>
 
   <div class="comments">
