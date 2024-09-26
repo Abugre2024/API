@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/58eebca1de.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>API Assignment</title>
+  </head>
+  <body>
+    <header class="header-top">
+      
+      <div class="weather">
+        <div class="classco">
+          <div class="sunny">
+            <span>
+              <img src="./images/asset 0.png" alt="Description of Image" />
+            </span>
+            <a class="weather-color" href="#">34c sunny</a>
+          </div>
+          <div class="sunny1">
+            <span>
+              <img src="./images/asset 0.png" alt="Description of Image" />
+            </span>
+            <a class="weather-colors" href="#"
+              >Thursday, 26th September, 2024</a
+            >
+          </div>
+          
+        </div>
+
+        <div class="social-media">
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-pinterest"></i>
+                  </div>
+                  <div id="translator"></div>
+      </div>
+      <div class="World">
+        <div id="logo">
+          <h1 class="file">The Galamsey Report</h1>
+          <!-- <div class="img"><img src="./images/1.jpg" alt="logo" /></div> -->
+        </div>
+        <div class="img1">
+            <!-- <img src="./images/ad.jpg" alt="ad" /> -->
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="nav-items">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Pictures</a>
+          <a href="#">Advocacy</a>
+          <a href="#">Editorial</a>
+          <a href="#">Opinion</a>
+        </div>
+        <div>
+          <form class="example">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <div id="articles"></div>
+
+
+    <div class="comment-box">
+      <h3>Leave a Comment</h3>
+      <textarea id="commentInput" placeholder="Write your comment here..." rows="4"></textarea>
+      <button onclick="addComment()">Submit</button>
+  </div>
+
+  <div class="comments">
+      <h3>Comments:</h3>
+      <div id="commentSection"></div>
+  </div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pagelanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'translator');
+    }
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <footer>
+        <div>
+            <footer class="footer-items">
+              <div class="About-us">
+                <h3>About Us</h3>
+                <p>
+                  Welcome to The Fact File, your reliable source for accurate, in-depth, and timely news. Our mission is to
+                  provide a platform where facts are prioritized, and stories are told with integrity and transparency.        
+        
+                </p>
+              </div>
+              <div>
+                <h3 id="">Features</h3>
+                <div class="footer-links">
+                  <a href="#">About Us</a>
+                  <a href="#">Services</a>
+                  <a href="#">Advertise With Us</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+              <div>
+                <h3>Follow Us</h3>
+                <div class="footer-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-square-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+              <div class>
+                <h3>Subscribe Newsletter</h3>
+                <div class="newsletter-input">
+                  <input placeholder="Enter email" type="email" name="" id="" />
+                  <button>send</button>
+                </div>
+              </div>
+          </div>
+          <footer>
+            <p id="copyright">
+              Copyright &copy; 2024 The Fact File. All rights reserved
+            </p>
+        
+    </footer>
+  </body>
+</html>
