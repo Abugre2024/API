@@ -16,7 +16,7 @@ async function fetchAndDisplayNews() {
     }
 
     const filteredNews = data.articles.filter(
-      (article) => article.title !== "[Removed]"
+      (article) => article && article.title !== "[Removed]"
     );
 
     filteredNews.forEach((article) => {
@@ -25,16 +25,16 @@ async function fetchAndDisplayNews() {
       articleDiv.className = "article";
 
       const articleH1 = document.createElement("h1");
-      articleH1.textContent = article.title;
+      articleH1.textContent = article.title ?? "Untitled Article";
       articleDiv.appendChild(articleH1);
 
       const articleP = document.createElement("p");
-      articleP.textContent = article.description;
+      articleP.textContent = article.description ?? "No description available";
       articleDiv.appendChild(articleP);
 
       const articleImg = document.createElement("img");
-      articleImg.setAttribute("src", article.urlToImage);
-      articleImg.setAttribute("alt", article.title);
+      articleImg.setAttribute("src", article.urlToImage ?? "");
+      articleImg.setAttribute("alt", article.title ?? "Article Image");
       articleImg.classList.add("article-img");
       articleDiv.appendChild(articleImg);
 
